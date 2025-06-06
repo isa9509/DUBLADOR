@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(36, 36, 58);
+    margin: 15px;
+    margin-left: 15px
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh-60px);
+    padding: 20px;
+    margin-left: 200px;
+}
+.conteudo-box{
+    background-color: rgb(100, 93, 116);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow:0 4px 12px ;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+
+}
+conteudo-box h1{
+    font-size: 18px;
+    margin-bottom: 15px ;
+    color: rgb(134, 132, 132);
+  
+}
+.text{padding: 15px;
+    border-radius: 12px;
+    box-shadow:0 4px 12px ;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 500px;
+    text-align: center;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.barra{
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color:rgb(36, 36, 58);
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(123, 118, 192, 0.1);
+}
+
+.barra.ativo{
+    left:0;
+
+
+}
+.barra ul{
+    list-style-type:none;
+    padding: 0;
+    margin-top: 60px  ;
+
+}
+.barra ul li{
+    padding: 15px 30px;
+
+}
+.barra ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.barra ul li a i{
+    font-size: 26px;
+}   
+    .barra ul li:hover{
+        background-color: #3498db;
+    }
+.barra ul li a i:hover{
+    transform: translateX(5px);
+}
+
+
+.menu-foto {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.butaoMenu{
+     background-color: rgb(141, 117, 11);
+     position: fixed;
+     left: 320px;
+     top: 20px;
+     z-index:3;
+     border-radius: 5px;
+     font-size: 24px;
+     border: none;
+     padding: 10px  15px;
+     cursor: pointer;
+     transition: left 0.3s ease; 
+
+}
+.butaoMenu:hover{
+    background-color: rgb(36, 36, 58);
+}
+.butaoMenu.ativo{
+    left: 20px;
+    
+}
+.carrossel {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      width: 100%;
+      background: #07083a;
+      padding: 10px 0; 
+    }
+
+    .carrossel .imagens {
+      display: inline-block;
+      animation: deslizar 20s linear infinite;
+    }
+
+    .carrossel img {
+      width: 200px;
+      height: auto;
+      margin: 0 10px;
+      border-radius: 10px;
+      vertical-align: middle;
+    }
+
+    @keyframes deslizar {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
